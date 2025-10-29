@@ -357,15 +357,17 @@ blockquote {
         font-size: 1rem;
     }
 
-    /* Hero */
+    /* Hero Image - maintain aspect ratio on mobile */
     .hero-image {
-        height: 60vh;
-        min-height: 400px;
+        height: auto;
+        min-height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        aspect-ratio: 16/9; /* Ajusta según la proporción de tu foto */
     }
 
-    .hero-overlay {
-        padding: 2rem;
-        margin: 0 1rem;
+    .hero {
+        padding: 4rem 0;
     }
 
     .hero-quote {
