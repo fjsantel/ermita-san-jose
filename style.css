@@ -119,17 +119,12 @@ blockquote {
 
 .hero {
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 0;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
-    background-color: #e0e0e0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-image img {
@@ -138,15 +133,10 @@ blockquote {
     display: block;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 4rem 5rem;
-    max-width: 900px;
-    margin: 0 2rem;
+/* Quote Section */
+.quote-section {
+    padding: 8rem 0;
+    background-color: #ffffff;
 }
 
 .hero-quote {
@@ -156,6 +146,8 @@ blockquote {
     color: #000000;
     font-weight: 300;
     font-style: italic;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* ========================================
