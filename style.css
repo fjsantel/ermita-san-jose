@@ -510,8 +510,26 @@ body {
 .footer-text {
     font-size: 1rem;
     color: #666666;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.footer-credit {
+    font-size: 0.875rem;
+    color: #999999;
     margin-bottom: 0;
     font-weight: 300;
+}
+
+.footer-credit a {
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: #000000;
+    opacity: 1;
 }
 
 /* ========================================
