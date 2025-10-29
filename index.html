@@ -11,8 +11,31 @@
 </head>
 <body>
 
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Assets/Cruz.svg" alt="Cruz" class="nav-cruz">
+                <span>Eremitorio de San José</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#historia" class="nav-link">Historia</a></li>
+                <li><a href="#actividades" class="nav-link">Actividades</a></li>
+                <li><a href="#sostenibilidad" class="nav-link">Sostenibilidad</a></li>
+                <li><a href="#apoyo" class="nav-link">Cómo Apoyar</a></li>
+                <li><a href="proyectos.html" class="nav-link nav-link-highlight">Proyectos para Aportar</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="container">
             <img src="Assets/Cruz.svg" alt="Cruz Eremitorio de San José" class="logo">
             <h1 class="header-title">Eremitorio de San José</h1>
@@ -34,7 +57,7 @@
     </section>
 
     <!-- Historia y Misión -->
-    <section class="section">
+    <section class="section" id="historia">
         <div class="container">
             <article class="content-block">
                 <h2 class="section-title">Una vida de silencio, oración y servicio</h2>
@@ -61,7 +84,7 @@
     </section>
 
     <!-- Actividades y Vida Diaria -->
-    <section class="section section-gray">
+    <section class="section section-gray" id="actividades">
         <div class="container">
             <article class="content-split">
                 <div class="content-text">
@@ -87,7 +110,7 @@
     </section>
 
     <!-- Sostenibilidad y Desafíos -->
-    <section class="section">
+    <section class="section" id="sostenibilidad">
         <div class="container">
             <article class="content-block">
                 <h2 class="section-title">Sostenibilidad y desafíos</h2>
@@ -122,7 +145,7 @@
     </section>
 
     <!-- Cómo Apoyar -->
-    <section class="section section-support">
+    <section class="section section-support" id="apoyo">
         <div class="container">
             <div class="support-content">
                 <h2 class="section-title">Cómo apoyar</h2>
