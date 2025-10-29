@@ -114,27 +114,27 @@ blockquote {
 }
 
 /* ========================================
-   Hero Section
+   Featured Image Section
    ======================================== */
 
-.hero {
+.featured-image {
     width: 100%;
-    margin-bottom: 0;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-}
-
-.hero-image img {
+.featured-image img {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
 }
 
-/* Quote Section */
-.quote-section {
+/* ========================================
+   Hero Section (Quote)
+   ======================================== */
+
+.hero {
     padding: 8rem 0;
     background-color: #ffffff;
 }
