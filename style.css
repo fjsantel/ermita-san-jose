@@ -127,7 +127,7 @@ blockquote {
     height: 75vh;
     min-height: 600px;
     background-color: #e0e0e0;
-    background-image: url('assets/ermita.jpg'); /* Reemplazar cuando la imagen esté disponible */
+    background-image: url('Assets/foto1.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
