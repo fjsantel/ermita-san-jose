@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+
+                // Si el elemento tiene highlights dentro, animarlos secuencialmente
+                const highlights = entry.target.querySelectorAll('.highlight');
+                highlights.forEach((highlight, index) => {
+                    setTimeout(() => {
+                        highlight.classList.add('visible');
+                    }, index * 150); // 150ms de delay entre cada highlight
+                });
             }
         });
     }, observerOptions);
@@ -27,6 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
     fadeElements.forEach(element => {
         element.classList.add('fade-in');
         observer.observe(element);
+    });
+
+    // Observar elementos con texto (párrafos) para animar highlights
+    const textElements = document.querySelectorAll('p');
+    textElements.forEach(element => {
+        if (element.querySelector('.highlight')) {
+            observer.observe(element);
+        }
     });
 
 });
