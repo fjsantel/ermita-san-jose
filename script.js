@@ -2,27 +2,36 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // ========================================
-    // Navigation Menu
+    // Navigation Menu - Dropdown
     // ========================================
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+    const menuButton = document.getElementById('menuButton');
+    const dropdownContent = document.getElementById('dropdownContent');
     const navMenu = document.getElementById('navMenu');
     let lastScrollTop = 0;
 
-    // Toggle mobile menu
-    if (navToggle) {
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
+    // Toggle dropdown menu
+    if (menuButton && dropdownContent) {
+        menuButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            menuButton.classList.toggle('active');
+            dropdownContent.classList.toggle('active');
         });
 
-        // Close menu when clicking a link
-        const links = navLinks.querySelectorAll('.nav-link');
-        links.forEach(link => {
+        // Close dropdown when clicking a link
+        const dropdownLinks = dropdownContent.querySelectorAll('.dropdown-link');
+        dropdownLinks.forEach(link => {
             link.addEventListener('click', function() {
-                navToggle.classList.remove('active');
-                navLinks.classList.remove('active');
+                menuButton.classList.remove('active');
+                dropdownContent.classList.remove('active');
             });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!menuButton.contains(e.target) && !dropdownContent.contains(e.target)) {
+                menuButton.classList.remove('active');
+                dropdownContent.classList.remove('active');
+            }
         });
     }
 
@@ -32,6 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(function() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Close dropdown when scrolling
+            if (menuButton && dropdownContent) {
+                menuButton.classList.remove('active');
+                dropdownContent.classList.remove('active');
+            }
 
             // Only hide nav when scrolling down and past 100px
             if (scrollTop > lastScrollTop && scrollTop > 100) {

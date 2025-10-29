@@ -18,19 +18,23 @@
                 <img src="Assets/Cruz.svg" alt="Cruz" class="nav-cruz">
                 <span>Eremitorio de San José</span>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="index.html#historia" class="nav-link">Historia</a></li>
-                <li><a href="index.html#actividades" class="nav-link">Actividades</a></li>
-                <li><a href="index.html#sostenibilidad" class="nav-link">Sostenibilidad</a></li>
-                <li><a href="index.html#apoyo" class="nav-link">Cómo Apoyar</a></li>
-                <li><a href="proyectos.html" class="nav-link nav-link-highlight">Proyectos para Aportar</a></li>
-            </ul>
+            <div class="nav-dropdown">
+                <button class="menu-button" id="menuButton">
+                    Menú
+                    <svg class="menu-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-content" id="dropdownContent">
+                    <li><a href="index.html#inicio" class="dropdown-link">Inicio</a></li>
+                    <li><a href="index.html#historia" class="dropdown-link">Historia</a></li>
+                    <li><a href="index.html#actividades" class="dropdown-link">Actividades</a></li>
+                    <li><a href="index.html#sostenibilidad" class="dropdown-link">Sostenibilidad</a></li>
+                    <li><a href="index.html#apoyo" class="dropdown-link">Cómo Apoyar</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="proyectos.html" class="dropdown-link dropdown-link-highlight">Proyectos para Aportar</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
