@@ -398,8 +398,7 @@ body {
 }
 
 .content-image {
-    position: sticky;
-    top: 3rem;
+    align-self: start;
 }
 
 .content-image img {
