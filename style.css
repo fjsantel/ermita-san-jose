@@ -67,6 +67,42 @@ blockquote {
 }
 
 /* ========================================
+   Scroll Animations
+   ======================================== */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Underline animation for titles */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 1s ease-out;
+}
+
+.section-title.visible::after {
+    width: 100%;
+}
+
+/* ========================================
    Container & Layout
    ======================================== */
 
