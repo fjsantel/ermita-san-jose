@@ -342,6 +342,16 @@ body {
     margin: 0 auto;
 }
 
+.hero-cite {
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #999999;
+    letter-spacing: 0.05em;
+}
+
 /* ========================================
    Content Blocks
    ======================================== */
