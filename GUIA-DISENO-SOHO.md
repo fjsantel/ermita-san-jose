@@ -401,5 +401,5 @@
 **Fecha**: 2025
 **Proyecto**: Eremitorio de San José - Liquiñe, Chile
 
-**Diseño web**: Francisco Santelices Ariztia
+**Diseño web**: Francisco Santelices Ariztía
 **Web**: [www.franciscosantelices.cl](https://www.franciscosantelices.cl)
