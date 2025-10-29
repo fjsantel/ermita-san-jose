@@ -106,23 +106,15 @@ blockquote {
 .highlight {
     position: relative;
     display: inline;
-    padding: 0 2px;
+    padding: 2px 4px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.08) 60%, rgba(0, 0, 0, 0.08) 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.8s ease-out;
 }
 
-.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #000000;
-    transition: width 0.8s ease-out;
-    transition-delay: 0.2s;
-}
-
-.highlight.visible::after {
-    width: 100%;
+.highlight.visible {
+    background-size: 100% 100%;
 }
 
 /* ========================================
