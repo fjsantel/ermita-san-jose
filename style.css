@@ -402,6 +402,12 @@ body {
     top: 3rem;
 }
 
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .placeholder-image {
     width: 100%;
     aspect-ratio: 3/4;
