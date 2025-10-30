@@ -164,6 +164,10 @@
         <a href="home.html" class="enter-button">Ingresar</a>
     </div>
 
+    <audio id="backgroundAudio" loop>
+        <source src="Assets/Audio landing.mp3" type="audio/mpeg">
+    </audio>
+
     <script>
         // Array de citas de San Juan de la Cruz
         const quotes = [
@@ -176,6 +180,17 @@
 
         // Reemplazar el contenido de la cita
         document.querySelector('.quote').textContent = randomQuote;
+
+        // Iniciar audio al interactuar con la página
+        const audio = document.getElementById('backgroundAudio');
+
+        // Intentar reproducir automáticamente
+        audio.play().catch(() => {
+            // Si falla, reproducir al hacer clic en cualquier parte
+            document.body.addEventListener('click', () => {
+                audio.play();
+            }, { once: true });
+        });
     </script>
 </body>
 </html>
