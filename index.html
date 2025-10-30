@@ -163,5 +163,19 @@
 
         <a href="home.html" class="enter-button">Ingresar</a>
     </div>
+
+    <script>
+        // Array de citas de San Juan de la Cruz
+        const quotes = [
+            "Una palabra habló el Padre, que fue su Hijo, y ésta habla siempre en eterno silencio, y en silencio ha de ser oída del alma",
+            "En soledad vivía,\ny en soledad he puesto ya su nido,\ny en soledad la guía\na solas su querido,\ntambién en soledad de amor herido."
+        ];
+
+        // Seleccionar una cita aleatoria
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+        // Reemplazar el contenido de la cita
+        document.querySelector('.quote').textContent = randomQuote;
+    </script>
 </body>
 </html>
