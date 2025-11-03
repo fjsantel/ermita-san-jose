@@ -25,6 +25,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA_M9_g58CrNg1kDMSCkYE1CIFz1Fe_ryFdtjh1R_ytMnjo0FWQtcbhJLbyzjv5xrE8ErJPX2JcV5Su-o&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
 </head>
 <body>
 
@@ -207,6 +210,16 @@
                             <span class="bank-value"><strong>Proyecto Ermita San José</strong></span>
                         </div>
                     </div>
+                </div>
+
+                <div class="paypal-container">
+                    <h3>Donación internacional (PayPal)</h3>
+                    <div id="paypal-container-DPLVE7S4VPCH6"></div>
+                    <script>
+                        paypal.HostedButtons({
+                            hostedButtonId: "DPLVE7S4VPCH6",
+                        }).render("#paypal-container-DPLVE7S4VPCH6")
+                    </script>
                 </div>
 
                 <a href="mailto:ermitadesanjose.stj@gmail.com" class="cta-button">Contactar</a>
