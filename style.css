@@ -951,10 +951,14 @@ body {
     }
 
     .bank-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .bank-value {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .bank-info-full .bank-value {
+        font-size: 0.7rem;
     }
 }

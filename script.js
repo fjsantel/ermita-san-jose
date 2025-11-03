@@ -20,9 +20,23 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close dropdown when clicking a link
         const dropdownLinks = dropdownContent.querySelectorAll('.dropdown-link');
         dropdownLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(e) {
                 menuButton.classList.remove('active');
                 dropdownContent.classList.remove('active');
+
+                // Handle smooth scroll for anchor links
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
             });
         });
 
