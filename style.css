@@ -1099,6 +1099,18 @@ body {
     #paypal-container-project-DPLVE7S4VPCH6,
     #paypal-container-general-DPLVE7S4VPCH6 {
         max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paypal-container iframe,
+    .paypal-container > div {
+        text-align: center !important;
+    }
+
+    .paypal-container * {
+        text-align: center !important;
     }
 }
 
@@ -1114,6 +1126,23 @@ body {
         font-size: 1.1rem;
         margin-bottom: 1.25rem;
     }
+
+    #paypal-container-DPLVE7S4VPCH6,
+    #paypal-container-project-DPLVE7S4VPCH6,
+    #paypal-container-general-DPLVE7S4VPCH6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paypal-container iframe,
+    .paypal-container > div {
+        text-align: center !important;
+    }
+
+    .paypal-container * {
+        text-align: center !important;
+    }
 }
 
 /* Móviles pequeños */
@@ -1126,5 +1155,22 @@ body {
     .paypal-container h3 {
         font-size: 1rem;
         margin-bottom: 1rem;
+    }
+
+    #paypal-container-DPLVE7S4VPCH6,
+    #paypal-container-project-DPLVE7S4VPCH6,
+    #paypal-container-general-DPLVE7S4VPCH6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paypal-container iframe,
+    .paypal-container > div {
+        text-align: center !important;
+    }
+
+    .paypal-container * {
+        text-align: center !important;
     }
 }
