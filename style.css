@@ -875,3 +875,86 @@ body {
         padding: 2rem;
     }
 }
+
+/* ========================================
+   Bank Details Styles
+   ======================================== */
+
+.bank-details {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+
+.bank-details h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.bank-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bank-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bank-info-item.bank-info-full {
+    grid-column: 1 / -1;
+}
+
+.bank-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.bank-value {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.bank-info-full .bank-value {
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .bank-details {
+        padding: 2rem 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .bank-info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .bank-details h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bank-label {
+        font-size: 0.75rem;
+    }
+
+    .bank-value {
+        font-size: 0.9rem;
+    }
+}
