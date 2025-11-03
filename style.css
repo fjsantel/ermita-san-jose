@@ -934,6 +934,7 @@ body {
     margin-top: 0.5rem;
 }
 
+/* Tablets y pantallas medianas */
 @media (max-width: 768px) {
     .bank-details {
         padding: 2rem 1.5rem;
@@ -951,14 +952,73 @@ body {
     }
 
     .bank-label {
+        font-size: 0.8rem;
+    }
+
+    .bank-value {
+        font-size: 0.9rem;
+    }
+
+    .bank-info-full .bank-value {
+        font-size: 0.95rem;
+    }
+}
+
+/* Móviles grandes (iPhone 12 Pro, iPhone 14, etc) */
+@media (max-width: 430px) {
+    .bank-details {
+        padding: 1.5rem 1.25rem;
+        margin: 1.5rem 0;
+    }
+
+    .bank-info-grid {
+        gap: 1rem;
+    }
+
+    .bank-details h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .bank-label {
+        font-size: 0.75rem;
+    }
+
+    .bank-value {
+        font-size: 0.8rem;
+    }
+
+    .bank-info-full .bank-value {
+        font-size: 0.85rem;
+    }
+}
+
+/* Móviles pequeños (iPhone 5/SE, Galaxy pequeños) */
+@media (max-width: 360px) {
+    .bank-details {
+        padding: 1.25rem 1rem;
+        margin: 1.25rem 0;
+    }
+
+    .bank-info-grid {
+        gap: 0.875rem;
+    }
+
+    .bank-details h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .bank-label {
         font-size: 0.7rem;
     }
 
     .bank-value {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+        line-height: 1.5;
     }
 
     .bank-info-full .bank-value {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
